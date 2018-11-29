@@ -499,7 +499,7 @@ describe('Job', () => {
         if (err) {
           throw err;
         }
-        expect(job.lockedAt).to.be(null);
+        expect(job.lockedAt).to.eql(agenda._notLocked);
       });
     });
 
